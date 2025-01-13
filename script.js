@@ -1,16 +1,16 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-});
-const scrollContainer = document.querySelector('[data-scroll-container]');
-if (scrollContainer) {
-    const scroll = new LocomotiveScroll({
-        el: scrollContainer,
-        smooth: true,
-    });
-} else {
-    console.error('Locomotive Scroll: No scroll container found.');
-}
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true,
+// });
+// const scrollContainer = document.querySelector('[data-scroll-container]');
+// if (scrollContainer) {
+//     const scroll = new LocomotiveScroll({
+//         el: scrollContainer,
+//         smooth: true,
+//     });
+// } else {
+//     console.error('Locomotive Scroll: No scroll container found.');
+// }
 
 function circleMouseFollower() {
     const miniCircle = document.querySelector(".minicircle");

@@ -1,22 +1,22 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true,
-// });
-// const scrollContainer = document.querySelector('[data-scroll-container]');
-// if (scrollContainer) {
-//     const scroll = new LocomotiveScroll({
-//         el: scrollContainer,
-//         smooth: true,
-//     });
-// } else {
-//     console.error('Locomotive Scroll: No scroll container found.');
-// }
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+});
+const scrollContainer = document.querySelector('[data-scroll-container]');
+if (scrollContainer) {
+    const scroll = new LocomotiveScroll({
+        el: scrollContainer,
+        smooth: true,
+    });
+} else {
+    console.error('Locomotive Scroll: No scroll container found.');
+}
 
 function circleMouseFollower() {
     const miniCircle = document.querySelector(".minicircle");
     window.addEventListener("mousemove", function(dets) {
-      miniCircle.style.top = `${dets.clientY - 5}px`;
-      miniCircle.style.left = `${dets.clientX - 5}px`;
+      miniCircle.style.top = `${dets.clientY - 1}px`;
+      miniCircle.style.left = `${dets.clientX - 1}px`;
     });
   }
   

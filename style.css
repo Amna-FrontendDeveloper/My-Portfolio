@@ -66,7 +66,25 @@ background-color: aliceblue;
 .nav a{
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+.nav button{
+    font-size: 1.2rem;
+   
+    border-radius: 25px;
+text-align: center;
+padding: .7vw 2vw;
+background-color: black;
+color: #fff;
+text-transform: uppercase;
+
+border: 1px solid white;
+}
+.nav button:hover {
+    background-color: rgb(250, 249, 249); /* Change background color to white */
+    color: rgb(10, 10, 10); /* Change text color to black for contrast */
+    transition: all 0.6s ease;
+   
 }
 .navP2{
     display: flex;
@@ -128,6 +146,7 @@ background-color: aliceblue;
     color: white;
     text-transform: uppercase;
 text-decoration: none;
+font-size: 1.5rem;
 }
 .herofooter .iconset{
     display: flex;
@@ -141,12 +160,15 @@ text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     color: white;
     background-color: rgb(78, 76, 76);
+}
+.circles i{
+    font-size: 1.5rem;
 }
 .Works{
    width: 100%;
@@ -169,10 +191,11 @@ position: relative;
 }
 .elem a{
     opacity: .7;
-    font-size: 5.5vw;
+    font-size: 5vw;
     text-decoration: none;
     color: white;
 }
+
 .elem h6{
     opacity: .7;
 
@@ -198,12 +221,13 @@ position: relative;
     margin-left: 8vw;
     margin-top: 10px;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 .works-btn:hover {
     background-color: rgb(250, 249, 249); /* Change background color to white */
     color: rgb(10, 10, 10); /* Change text color to black for contrast */
-    transition: all 0.6s ease;
-    text-transform: uppercase;
+    transition: all 0.9s ease;
+    
 }
 
 #Skill-set {
@@ -226,7 +250,7 @@ margin-top: 20vw;
     white-space: nowrap;
     display: inline-block;
     animation-name: move;
-    animation-duration: 30s;
+    animation-duration: 22s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     padding: 2vw 0vw;
@@ -277,6 +301,7 @@ color: rgb(255, 255, 255);
     height: 25%;
     margin-right: 4vw;
     margin-top: -4vw;
+    border-radius: 50%;
 }
 
 .textabout{
@@ -298,357 +323,12 @@ color: rgb(255, 255, 255);
 .textabout a{
     text-decoration: none;
     border: 1px solid white;
-    border-radius: 100px;
-    color: rgb(255, 255, 255);
-    font-size: 1.3vw;
-    padding: .5vw 1.2vw;
-
-    text-transform: uppercase;
-
-}
-.textabout a:hover {
-
-    background-color: white; /* Change background color to white */
-    color: black; /* Change text color to black for contrast */
-    transition: all 0.6s ease;
-}
-
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3vw 6vw;
-    background-color: black;
-    color: white;
-    margin-top: 0vw;
-}
-.left{
-display: flex;
-
-gap: 30px;
-
-}
-.left h6{
-    font-size: 16px;
-}
-.right{
-    display: flex;
-    gap: 60px;
-}
-.right a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-}
-body {
-    height: 100%;
-    width: 100%;
-/* overflow: hidden; */
-
-}
-::selection {
-    background-color: #fff;
-    color: #000; /* optional */
-  }
-  
-  ::-moz-selection {
-    background-color: #fff;
-    color: #000; /* optional */
-  }
-  
-  
-.main {
-    width: 100%;
-    background-color: black;
-    position: relative;
-    min-height: 100vh;
-   padding: 2vw;
-}
-/* [data-scroll-container] {
-    overflow: hidden;
-} */
-.main .hero {
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    position: relative;
-}
-.minicircle{
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    width: 20px;
-    height: 20px;
-position: fixed;
-z-index: 99999;
-border-radius: 50%;
-background-color: aliceblue;
-}
-.bounding{
-    width: fit-content;
-    /* background-color: rebeccapurple; */
-    overflow: hidden;
-}
-.bounding .boundingelem{
-    transform: translateY(100%);
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 24px 40px;
-    color: white;
-}
-.nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-.navP2{
-    display: flex;
-   gap: 25px;
-   text-transform: uppercase;
-}
-
-.heading{
-    margin-top: 60px;
-}
-.heading h1{
-  
-    opacity: .6;
-    margin-left: 30px;
-    line-height: 1;
-    font-size: 9vw;
-    text-transform: uppercase;
-
- 
-}
-.heading #hone{
-    margin-left: 200px;
-}
-.Blocktext{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-.Blocktext h5{
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: right;
-}
-.heading2{
-    margin-top: 145px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.heading2 h5{
-    text-transform: uppercase;
-    text-align: right;
-    margin-top: .5vw;
-    font-size: 1.5vw;
-}
-.herofooter{
-    padding: 0 2vw;
-    width: 100%;
-    position: absolute;
-    bottom: 3%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.herofooter a{
-    color: white;
-    text-transform: uppercase;
-text-decoration: none;
-}
-.herofooter .iconset{
-    display: flex;
-    gap: 5px;
-    margin: 2px;
-    
-    
-}
-
-.circles{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    color: white;
-    background-color: rgb(78, 76, 76);
-}
-.Works{
-   width: 100%;
-    min-height: 80vh;
- color: white;
-   
-    margin-top: 10vw;
-}
-.elem{
-    
-position: relative;
-    padding: 2vw 4vw;
-    padding-right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  margin: 2vw 5vw;
-    border-top: 1px solid rgb(78, 74, 74);
-   
-}
-.elem a{
-    opacity: .7;
-    font-size: 5.5vw;
-    text-decoration: none;
-    color: white;
-}
-.elem h6{
-    opacity: .7;
-
-    font-size: 16px;
-}
-.elemlast{
-    border-bottom: 1px solid rgb(78, 74, 74);
-}
-.elem img{
-    height: 190%;
-    position: absolute;
-    z-index: 999;
-    opacity: 0; /* Start with hidden images */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-   
-}
-.works-btn{
-    padding: 1vw 2vw;
     border-radius: 25px;
-    border: 1px solid white;
-    background-color: #000;
-    color: white;
-    margin-left: 8vw;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-.works-btn:hover {
-    background-color: rgb(250, 249, 249); /* Change background color to white */
-    color: rgb(10, 10, 10); /* Change text color to black for contrast */
-    transition: all 0.6s ease;
-    text-transform: uppercase;
-}
 
-#Skill-set {
-   
-    overflow-x: auto;
-    white-space: nowrap;
-    color: white;
-    opacity: .9;
-    margin-top: 5vw;
-margin-top: 20vw;
-    
-}
-
-#Skill-set::-webkit-scrollbar {
-    display: none;
-}
-.con {
-    border-top: 1px solid rgb(65, 65, 65);
-    border-bottom: 1px solid rgb(66, 66, 66);
-    white-space: nowrap;
-    display: inline-block;
-    animation-name: move;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    padding: 2vw 0vw;
-}
-
-#Skill-set h1 {
-    font-size: 5vw;
-    /* background-color: lightblue; */
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-#gola {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #bebaba;
-    margin: 1vw 2vw;
-}
-
-@keyframes move {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.about{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    margin-top: 30px;
-    gap: 30px;
-    width: 100%;
-background: #000000;
-padding: 6vw 8vw;
-padding-left: 30vw;
-color: rgb(255, 255, 255);
-
-}
-.about img{
-    width: 25%;
-    height: 25%;
-    margin-right: 4vw;
-    margin-top: -4vw;
-}
-
-.textabout{
-    width: 45rem;
-  
-}
-.textabout h4{
-    opacity: .8;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 2vw;
-
-}
-.textabout p{
-    line-height: 1.2;
-    margin-bottom: 4vw;
-    font-size: 1.5vw;
-}
-.textabout a{
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 100px;
     color: rgb(255, 255, 255);
     font-size: 1.3vw;
-    padding: .5vw 1.2vw;
+    padding: 1vw 2vw;
+
 
     text-transform: uppercase;
 

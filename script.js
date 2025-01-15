@@ -15,8 +15,8 @@ if (scrollContainer) {
 function circleMouseFollower() {
     const miniCircle = document.querySelector(".minicircle");
     window.addEventListener("mousemove", function(dets) {
-      miniCircle.style.top = `${dets.clientY - 1}px`;
-      miniCircle.style.left = `${dets.clientX - 1}px`;
+      miniCircle.style.top = `${dets.clientY - 18}px`;
+      miniCircle.style.left = `${dets.clientX - 18}px`;
     });
   }
   
